@@ -1,0 +1,23 @@
+{
+  "name": "snakes-and-ladders",
+  "version": "1.0.0",
+  "description": "Snakes-and-ladders is an ancient Indian board game for two or more players",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rathourarv/Snakes-and-ladders.git"
+  },
+  "author": "rathourarv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rathourarv/Snakes-and-ladders/issues"
+  },
+  "homepage": "https://github.com/rathourarv/Snakes-and-ladders#readme",
+  "dependencies": {
+    "mocha": "^8.1.3"
+  }
+}
