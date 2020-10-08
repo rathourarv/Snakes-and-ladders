@@ -1,5 +1,11 @@
 {
   "startPosition": 0,
   "endPosition": 100,
-  "numberOfSteps": 10
+  "numberOfSteps": 10,
+  "snakes": [
+    {
+      "head": 14,
+      "tail": 7
+    }
+  ]
 }
