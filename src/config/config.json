@@ -7,5 +7,21 @@
       "head": 14,
       "tail": 7
     }
-  ]
+  ],
+  "diceType": "crooked",
+  "dices": {
+    "fair": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "crooked": [
+      2,
+      4,
+      6
+    ]
+  }
 }
