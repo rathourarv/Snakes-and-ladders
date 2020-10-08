@@ -6,7 +6,7 @@ const Snake = require("./snake");
 const Logger = require("js-logger");
 
 class Game {
-    constructor(startPosition = 0, endPosition = 100, numberOfSteps = 10, snakes = [], dice = new Dice()) {
+    constructor(startPosition, endPosition, numberOfSteps, snakes, dice) {
         this.board = new Board(startPosition, endPosition);
         this.numberOfSteps = numberOfSteps;
         this.dice = dice;
@@ -20,9 +20,7 @@ class Game {
         return filteredSnakes.length === 0 ? position : filteredSnakes[0].tail
     }
 
-    start() {
-        const name = prompt('Please enter your name: ');
-        Logger.info(`welcome to Snakes and Ladders ${name}`);
+    start(name) {
         this.player = new Player(name, this.board.getStartPosition());
         for (let turn = 0; turn < this.numberOfSteps; turn++) {
             const value = this.dice.roll();
@@ -34,7 +32,7 @@ class Game {
                 Logger.info(`Skipping... position is not valid ${nextPosition}`);
             }
         }
-        Logger.info(`your total score is ${this.player.getCurrentPosition()}`)
+        return this.player.getCurrentPosition();
     }
 }
 
